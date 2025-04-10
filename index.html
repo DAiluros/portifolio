@@ -2,66 +2,95 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio Criativo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Designer Gráfico & UX/UI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f6ff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .banner {
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: slideUp 1s ease;
+    }
+
+    h2 {
+      color: #6a4ea8;
+      text-align: center;
+    }
+
+    .sobre-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sobre-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .sobre-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .sobre-texto {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* Animações simples */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Meu Portfólio</h1>
-    <p>Designer Gráfico | Ilustração | UX/UI</p>
-  </header>
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#trabalhos">Trabalhos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
 
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p>Olá! Sou designer gráfico apaixonada por design digital, ilustração e UX/UI. Tenho experiência em branding, redes sociais e interfaces criativas.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>O que eu faço</h2>
-    <ul>
-      <li>Design Gráfico</li>
-      <li>UX/UI</li>
-      <li>Ilustração</li>
-      <li>Social Media</li>
-      <li>Edição de Vídeo</li>
-    </ul>
-  </section>
-
-  <section id="trabalhos">
-    <h2>Alguns Trabalhos</h2>
-    <div class="grid">
-      <img src="Slide 16_9 - 10.png" alt="Trabalho 1">
-      <img src="Slide 16_9 - 5.png" alt="Trabalho 2">
-      <img src="Slide 16_9 - 6.png" alt="Trabalho 3">
-      <img src="Slide 16_9 - 7.png" alt="Trabalho 4">
-       <img src="Slide 16_9 - 8.png" alt="Trabalho 4">
+    <div class="sobre-container">
+      <img src="sua-foto.jpg" alt="Minha Foto">
+      <div class="sobre-texto">
+        <p>Olá! Sou uma designer gráfico apaixonada por criatividade, interfaces e narrativas visuais.</p>
+        <p><strong>Formação:</strong> Graduada em Design Digital com foco em branding, ilustração e UX/UI.</p>
+        <p>Estou sempre em busca de novos aprendizados e experiências que agreguem valor aos meus projetos.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contato">
-    <h2>Fale Comigo</h2>
-    <form id="form">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p id="form-msg"></p>
-  </section>
-
-  <footer>
-    &copy; 2025 - Cecilia Rodrigues
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
