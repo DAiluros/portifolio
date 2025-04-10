@@ -1,179 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio | Designer Gráfico & UX/UI</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f6ff;
-      color: #333;
-      scroll-behavior: smooth;
-      padding-top: 80px; /* espaço pro menu */
-    }
-    .floating-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #a18cd1;
-      padding: 0.5rem 1rem;
-      border-radius: 0 0 0 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 999;
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .floating-menu a {
-      display: block;
-      padding: 0.6rem 1rem;
-      background: white;
-      color: #6a4ea8;
-      text-align: center;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      .floating-menu {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        justify-content: center;
-        border-radius: 10px 10px 0 0;
-        padding: 0.5rem;
-      }
-    }
-
-    .banner {
-      background: url('banner.png') center/cover no-repeat;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      animation: slideIn 1s ease-in-out;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      animation: fadeInUp 1s ease forwards;
-    }
-    h2 {
-      color: #6a4ea8;
-      text-align: center;
-    }
-    h3 {
-      text-align: center;
-    }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .row img {
-      max-width: 100%;
-      width: calc(25% - 1rem);
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .sobre-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-    }
-    .sobre-container img {
-      width: 200px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .sobre-texto {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .carousel-wrapper {
-      overflow: hidden;
-      position: relative;
-      padding: 1rem 0;
-    }
-    .carousel {
-      display: flex;
-      gap: 2rem;
-      animation: scrollCarousel 20s linear infinite;
-    }
-    .carousel img {
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-      background: white;
-      padding: 0.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea, button {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      background-color: #a18cd1;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-      font-size: 0.9rem;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideIn {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes scrollCarousel {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Designer Gráfico & UX|UI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
 
   <div class="floating-menu">
-    <a href="#sobre">Sobre</a>
-    <a href="#conhecimentos">Serviços</a>
-    <a href="#trabalhos">Trabalhos</a>
-    <a href="#clientes">Clientes</a>
-    <a href="#contato">Contato</a>
+    <a href="#sobre">S</a>
+    <a href="#conhecimentos">C</a>
+    <a href="#trabalhos">T</a>
+    <a href="#clientes">L</a>
+    <a href="#contato">@</a>
   </div>
-
-  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
 
   <section id="sobre">
     <h2>Sobre Mim</h2>
     <div class="sobre-container">
-      <img src="foto.png" alt="Foto pessoal">
+      <img src="mui.png" alt="Foto pessoal">
       <div class="sobre-texto">
         <p>Olá! Sou uma designer gráfico apaixonada por criatividade, interfaces e narrativas visuais. 
           Tenho formação em Design Digital e experiência com branding, ilustração e UX/UI.</p>
@@ -181,11 +29,11 @@
     </div>
   </section>
 
- <section id="servicos">
-    <h2>O que eu faço</h2>
+  <section id="conhecimentos">
+    <h2>O que posso fazer</h2>
     <ul>
       <li>Design Gráfico</li>
-      <li>UX/UI</li>
+      <li>UX/UI Design</li>
       <li>Ilustração</li>
       <li>Social Media</li>
       <li>Edição de Vídeo</li>
@@ -193,670 +41,63 @@
   </section>
 
   <section id="trabalhos">
-    <h2>Alguns Trabalhos</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/400x250?text=Trabalho+1" alt="Trabalho 1">
-      <img src="https://via.placeholder.com/400x250?text=Trabalho+2" alt="Trabalho 2">
-      <img src="https://via.placeholder.com/400x250?text=Trabalho+3" alt="Trabalho 3">
-      <img src="https://via.placeholder.com/400x250?text=Trabalho+4" alt="Trabalho 4">
+    <h2>Trabalhos</h2>
+    <h3>Design Gráfico</h3>
+    <div class="row">
+      <img src="https://via.placeholder.com/300x200?text=Design1">
+      <img src="https://via.placeholder.com/300x200?text=Design2">
+    </div>
+    <h3>UX/UI</h3>
+    <div class="row">
+      <img src="https://via.placeholder.com/300x200?text=UI1">
+      <img src="https://via.placeholder.com/300x200?text=UI2">
+    </div>
+    <h3>Ilustração</h3>
+    <div class="row">
+      <img src="https://via.placeholder.com/300x200?text=Ilustra1">
+      <img src="https://via.placeholder.com/300x200?text=Ilustra2">
+    </div>
+    <h3>Social Media</h3>
+    <div class="row">
+      <img src="https://via.placeholder.com/300x200?text=Social1">
+      <img src="https://via.placeholder.com/300x200?text=Social2">
+    </div>
+    <h3>Vídeos</h3>
+    <div class="row">
+      <video controls width="300">
+        <source src="video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <video controls width="300">
+        <source src="video2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+    </div>
+  </section>
+
+  <section id="clientes">
+    <h2>Clientes</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="https://via.placeholder.com/100x100?text=Logo1">
+        <img src="https://via.placeholder.com/100x100?text=Logo2">
+      </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2>Fale Comigo</h2>
-    <form id="form">
+    <h2>Contato</h2>
+    <form>
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <textarea placeholder="Sua mensagem" rows="5"></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <p id="form-msg"></p>
   </section>
 
   <footer>
-    &copy; 2025 - Meu Portfólio Criativo
+    &copy; 2025 - Portfólio Criativo
   </footer>
-
   <script src="script.js"></script>
-</body>
-</html>
-🎨 2. style.css:
-css
-Copiar
-Editar
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #fafafa;
-  color: #333;
-}
-
-header {
-  background: #6a4ea8;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-nav {
-  background: #eee;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #6a4ea8;
-  font-weight: bold;
-}
-
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #6a4ea8;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.grid img {
-  width: calc(50% - 0.5rem);
-  border-radius: 6px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input, textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background: #6a4ea8;
-  color: white;
-  border: none;
-  padding: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  .grid img {
-    width: 100%;
-  }
-}
-⚙️ 3. script.js:
-javascript
-Copiar
-Editar
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('form');
-  const msg = document.getElementById('form-msg');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    msg.textContent = 'Mensagem enviada com sucesso! 😊';
-    msg.style.color = 'green';
-    form.reset();
-  });
-});
-📦 Quer que eu compacte tudo isso num .zip?
-Se quiser, eu já gero o .zip com esses arquivos prontos pra subir no GitHub ou Netlify. Posso te mandar agora mesmo.
-
-Você quer que eu faça isso?
-
-
-
-
-
-
-Você disse:
-pode gerar o zip
-
-
-O ChatGPT disse:
-Parece que não consigo realizar tarefas mais avançadas como gerar arquivos zip agora. Por favor, tente novamente mais tarde.
-
-Enquanto isso, se quiser, posso te mostrar como criar a estrutura de arquivos no seu computador manualmente e subir no GitHub/Netlify — é bem simples e rápido. Quer que eu te guie? ​​
-
-
-
-
-
-
-Você disse:
-Na parte sobre mim pode adicionar espaço para a imagem(no caso uma foto minha) e um adendo para formação, também queria adicionar animações leves(mas que seja editáveis e simples)
-
-
-O ChatGPT disse:
-Perfeito! Vamos criar uma nova versão do HTML com:
-
-Espaço para sua foto na seção Sobre Mim;
-
-Adendo sobre sua formação;
-
-Animações leves com CSS (editáveis e simples de personalizar depois).
-
-Aqui vai o código atualizado, com um estilo limpo e suave:
-
-✅ Novo HTML com animações e informações adicionais:
-html
-Copiar
-Editar
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Designer Gráfico & UX/UI</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f6ff;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    .banner {
-      background: linear-gradient(to right, #a18cd1, #fbc2eb);
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      animation: fadeIn 2s ease-in-out;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      animation: slideUp 1s ease;
-    }
-
-    h2 {
-      color: #6a4ea8;
-      text-align: center;
-    }
-
-    .sobre-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .sobre-container img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .sobre-container img:hover {
-      transform: scale(1.05);
-    }
-
-    .sobre-texto {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    /* Animações simples */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
-
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <div class="sobre-container">
-      <img src="sua-foto.jpg" alt="Minha Foto">
-      <div class="sobre-texto">
-        <p>Olá! Sou uma designer gráfico apaixonada por criatividade, interfaces e narrativas visuais.</p>
-        <p><strong>Formação:</strong> Graduada em Design Digital com foco em branding, ilustração e UX/UI.</p>
-        <p>Estou sempre em busca de novos aprendizados e experiências que agreguem valor aos meus projetos.</p>
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
-✨ Como usar:
-Substitua "sua-foto.jpg" pelo nome real da sua foto (adicione ela na mesma pasta do HTML).
-
-Você pode trocar as cores e animações com facilidade no <style>.
-
-Depois, é só subir no GitHub e conectar no Netlify.
-
-Se quiser, posso empacotar esse arquivo HTML com uma imagem de exemplo e te gerar um .zip com tudo. Quer?
-
-
-
-
-
-
-Você disse:
-mantenha as informações do html anterior bb
-
-
-O ChatGPT disse:
-Editado
-Atualizei o HTML mantendo todas as informações anteriores e adicionei:
-
-Um espaço para a sua foto pessoal na seção Sobre Mim.
-
-Um campo adicional para sua formação.
-
-Animações leves em CSS para entrada de seções e banner.
-
-Um efeito de clique nas imagens que abre elas em destaque.
-
-Se quiser, posso gerar um novo ZIP com esses arquivos agora. Deseja isso?
-
-
-
-
-
-
-Você disse:
-ta ficando lindis! o menu flutuante pode ser horizontal 
-
-
-O ChatGPT disse:
-Ai que fofaaa, fico feliz que esteja curtindo! 😍 Vamos deixar esse menu ainda mais chiquérrimo e funcional! Aqui está o que vou fazer:
-
-💫 Alterações no menu flutuante:
-Transformar o menu de vertical para horizontal.
-
-Posicionar ele no topo da tela, tipo uma barra fixa.
-
-Manter o estilo delicado com as bolinhas de navegação.
-
-Você quer que ele fique:
-
-Centralizado no topo?
-
-Ou alinhado à esquerda/direita?
-
-Também posso deixar ele responsivo pra sumir ou virar hamburguer em tela pequena, se quiser futuramente!
-
-Posso fazer agora e já preparar o ZIP atualizado pra você. Mando? 🫶
-
-
-
-
-
-
-Você disse:
-pode alinhar a direita e também deixar ele responsivo
-
-
-O ChatGPT disse:
-Portfolio Site
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Designer Gráfico & UX|UI</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f6ff;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    /* Menu flutuante horizontal e responsivo */
-    .floating-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #a18cd1;
-      padding: 0.5rem 1rem;
-      border-radius: 0 0 0 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 1000;
-      display: flex;
-      gap: 0.5rem;
-    }
-    .floating-menu a {
-      display: block;
-      width: 40px;
-      height: 40px;
-      background: white;
-      color: #6a4ea8;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    @media (max-width: 600px) {
-      .floating-menu {
-        top: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        justify-content: center;
-        border-radius: 8px 8px 0 0;
-      }
-    }
-
-    .banner {
-      background: url('banner.png') center/cover no-repeat;
-Editado
-Prontinho! 🌟 O menu agora está alinhado à direita, é horizontal e também responsivo. Em telas pequenas, ele vai para a parte inferior e se adapta direitinho. Se quiser mudar o estilo ou os ícones, só falar!
-
-
-
-
-
-
-Você disse:
-o resto da pagina não esta aparecendo bb
-
-
-O ChatGPT disse:
-Opa! Vamos resolver isso rapidinho, bb 💜
-
-Esse probleminha normalmente acontece quando o menu flutuante está com position: fixed e algum z-index muito alto, ou o layout está "cobrindo" o restante da página sem querer.
-
-Aqui está a correção: ajustei o z-index, adicionei padding-top e removi possíveis conflitos de layout. Segue o código corrigido (mantendo tudo o que fizemos até agora — com menu flutuante horizontal à direita, responsivo e bonitinho):
-
-✅ Correções principais:
-Adicionei padding-top no <body> para garantir que o menu não esconda o conteúdo.
-
-Adicionei flex-wrap e overflow para o menu em mobile.
-
-Certifiquei que o menu não ocupa toda a tela e o restante do conteúdo seja exibido corretamente.
-
-html
-Copiar
-Editar
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio | Designer Gráfico & UX/UI</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f6ff;
-      color: #333;
-      scroll-behavior: smooth;
-      padding-top: 80px; /* espaço pro menu */
-    }
-    .floating-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #a18cd1;
-      padding: 0.5rem 1rem;
-      border-radius: 0 0 0 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 999;
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .floating-menu a {
-      display: block;
-      padding: 0.6rem 1rem;
-      background: white;
-      color: #6a4ea8;
-      text-align: center;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      .floating-menu {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        justify-content: center;
-        border-radius: 10px 10px 0 0;
-        padding: 0.5rem;
-      }
-    }
-
-    .banner {
-      background: url('banner.png') center/cover no-repeat;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      animation: slideIn 1s ease-in-out;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      animation: fadeInUp 1s ease forwards;
-    }
-    h2 {
-      color: #6a4ea8;
-      text-align: center;
-    }
-    h3 {
-      text-align: center;
-    }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .row img {
-      max-width: 100%;
-      width: calc(25% - 1rem);
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .sobre-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-    }
-    .sobre-container img {
-      width: 200px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .sobre-texto {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .carousel-wrapper {
-      overflow: hidden;
-      position: relative;
-      padding: 1rem 0;
-    }
-    .carousel {
-      display: flex;
-      gap: 2rem;
-      animation: scrollCarousel 20s linear infinite;
-    }
-    .carousel img {
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-      background: white;
-      padding: 0.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea, button {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      background-color: #a18cd1;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-      font-size: 0.9rem;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideIn {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes scrollCarousel {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="floating-menu">
-    <a href="#sobre">Sobre</a>
-    <a href="#conhecimentos">Serviços</a>
-    <a href="#trabalhos">Trabalhos</a>
-    <a href="#clientes">Clientes</a>
-    <a href="#contato">Contato</a>
-  </div>
-
-  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
-
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <div class="sobre-container">
-      <img src="foto.png" alt="Foto pessoal">
-      <div class="sobre-texto">
-        <p>Olá! Sou uma designer gráfico apaixonada por criatividade, interfaces e narrativas visuais. 
-          Tenho formação em Design Digital e experiência com branding, ilustração e UX/UI.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- aqui seguem os outros blocos normalmente... -->
-
 </body>
 </html>
