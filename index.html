@@ -1,39 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Designer Gráfico & UX|UI</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Simples</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: #6a4ea8;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #6a4ea8;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #6a4ea8;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .grid img {
+      width: calc(50% - 0.5rem);
+      border-radius: 6px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #6a4ea8;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .grid img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="banner">Designer Gráfico | UX/UI | Ilustradora ✨</div>
 
-  <div class="floating-menu">
-    <a href="#sobre">S</a>
-    <a href="#conhecimentos">C</a>
-    <a href="#trabalhos">T</a>
-    <a href="#clientes">L</a>
-    <a href="#contato">@</a>
-  </div>
+  <header>
+    <h1>Meu Portfólio</h1>
+    <p>Designer Gráfico | Ilustração | UX/UI</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <div class="sobre-container">
-      <img src="mui.png" alt="Foto pessoal">
-      <div class="sobre-texto">
-        <p>Olá! Sou uma designer gráfico apaixonada por criatividade, interfaces e narrativas visuais. 
-          Tenho formação em Design Digital e experiência com branding, ilustração e UX/UI.</p>
-      </div>
-    </div>
+    <p>Olá! Sou designer gráfico apaixonada por design digital, ilustração e UX/UI. Tenho experiência em branding, redes sociais e interfaces criativas.</p>
   </section>
 
-  <section id="conhecimentos">
-    <h2>O que posso fazer</h2>
+  <section id="servicos">
+    <h2>O que eu faço</h2>
     <ul>
       <li>Design Gráfico</li>
-      <li>UX/UI Design</li>
+      <li>UX/UI</li>
       <li>Ilustração</li>
       <li>Social Media</li>
       <li>Edição de Vídeo</li>
@@ -41,63 +120,28 @@
   </section>
 
   <section id="trabalhos">
-    <h2>Trabalhos</h2>
-    <h3>Design Gráfico</h3>
-    <div class="row">
-      <img src="https://via.placeholder.com/300x200?text=Design1">
-      <img src="https://via.placeholder.com/300x200?text=Design2">
-    </div>
-    <h3>UX/UI</h3>
-    <div class="row">
-      <img src="https://via.placeholder.com/300x200?text=UI1">
-      <img src="https://via.placeholder.com/300x200?text=UI2">
-    </div>
-    <h3>Ilustração</h3>
-    <div class="row">
-      <img src="https://via.placeholder.com/300x200?text=Ilustra1">
-      <img src="https://via.placeholder.com/300x200?text=Ilustra2">
-    </div>
-    <h3>Social Media</h3>
-    <div class="row">
-      <img src="https://via.placeholder.com/300x200?text=Social1">
-      <img src="https://via.placeholder.com/300x200?text=Social2">
-    </div>
-    <h3>Vídeos</h3>
-    <div class="row">
-      <video controls width="300">
-        <source src="video1.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos HTML5.
-      </video>
-      <video controls width="300">
-        <source src="video2.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos HTML5.
-      </video>
-    </div>
-  </section>
-
-  <section id="clientes">
-    <h2>Clientes</h2>
-    <div class="carousel-wrapper">
-      <div class="carousel">
-        <img src="https://via.placeholder.com/100x100?text=Logo1">
-        <img src="https://via.placeholder.com/100x100?text=Logo2">
-      </div>
+    <h2>Alguns Trabalhos</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/400x250?text=Trabalho+1" alt="Trabalho 1">
+      <img src="https://via.placeholder.com/400x250?text=Trabalho+2" alt="Trabalho 2">
+      <img src="https://via.placeholder.com/400x250?text=Trabalho+3" alt="Trabalho 3">
+      <img src="https://via.placeholder.com/400x250?text=Trabalho+4" alt="Trabalho 4">
     </div>
   </section>
 
   <section id="contato">
-    <h2>Contato</h2>
+    <h2>Fale Comigo</h2>
     <form>
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="5"></textarea>
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 - Cecília Rodrigues
+    &copy; 2025 - Meu Portfólio Criativo
   </footer>
-  <script src="script.js"></script>
+
 </body>
 </html>
