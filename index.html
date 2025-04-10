@@ -3,91 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio Simples</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      background: #fafafa;
-      color: #333;
-    }
-
-    header {
-      background: #6a4ea8;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    nav {
-      background: #eee;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #6a4ea8;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #6a4ea8;
-      margin-bottom: 1rem;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .grid img {
-      width: calc(50% - 0.5rem);
-      border-radius: 6px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input, textarea {
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background: #6a4ea8;
-      color: white;
-      border: none;
-      padding: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .grid img {
-        width: 100%;
-      }
-    }
-  </style>
+  <title>Portfólio Criativo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -131,17 +48,19 @@
 
   <section id="contato">
     <h2>Fale Comigo</h2>
-    <form>
+    <form id="form">
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu e-mail" required>
       <textarea placeholder="Sua mensagem" rows="5" required></textarea>
       <button type="submit">Enviar</button>
     </form>
+    <p id="form-msg"></p>
   </section>
 
   <footer>
-    &copy; 2025 - Cecilia Rodrigues
+    &copy; 2025 - Meu Portfólio Criativo
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
