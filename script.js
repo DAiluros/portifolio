@@ -1,0 +1,1 @@
+// JS opcional para interações futuras
